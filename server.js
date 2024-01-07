@@ -13,10 +13,10 @@ app.use(bodyParser.json());
 app.use("/", routes);
 
 const startNextApp = () => {
-  const path = `${__dirname}/Next`;
+  // const path = `${__dirname}/Next`;
 
   spawn("npx", ["next", "start"], {
-    cwd: path,
+    cwd: "/home/lenovo/Documents/ssd/test/Next",
     stdio: "inherit",
   });
   console.log("Next.js server build successfully.");
